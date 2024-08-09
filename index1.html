@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CollegeCupid</title>
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+        body {
+            background-color: #fde9ff;
+            color: white;
+        }
+        .jumbotron {
+            background-color: #fde9ff;
+            color: black;
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Dancing Script', cursive;
+        }
+        .hr {
+            border-top: 3px double #8c8b8b;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .topic {
+            text-align: center;
+        }
+        .embed-responsive {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 0;
+            overflow: hidden;
+            margin-bottom: 2rem;
+        }
+        .embed-responsive-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: 768px) {
+            .jumbotron img {
+                width: 100%;
+                height: auto;
+            }
+            .footer {
+                padding: 10px 0;
+            }
+            .embed-responsive {
+                height: 60vh; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="jumbotron">
+                    <h1 class="topic">CollegeCupid</h1>
+                    <hr class="hr">
+                    <h5 class="topic">Not your traditional dating app!</h5>
+                    <br>
+                    <img src="back.gif" class="topic" alt="CollegeCupid Image" width="400px">
+                    <br><br>
+                    <h5 class="topic">Bringing University Hearts Together Over Coffee</h5>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="embed-responsive embed-responsive-16by9" style="height: 100vh;">
+                    <iframe src="https://forms.gle/8FSP86zANYcyQLgi8" class="embed-responsive-item" frameborder="0">Loading…</iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                Copyright &copy; 2024 CollegeCupid. All rights reserved.
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
